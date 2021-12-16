@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1B262C;
+    color: white;
+    padding: 8px 50px;
+    
+}
+.top-nav p {
+    margin: 0px 10px;
+    font-size: 0.9rem;
+}
+.top-nav img {
+    border-radius: 2px;
+    height: 20px;
+}
+.main-nav {
+    color: white;
+    padding: 16px 50px;
+}
+.scroll {
+    background-color: black;
+}
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: all .3s;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    /* border-radius: 2px; */
+
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.main-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.961);
+}
+.main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-nav ul li {
+    list-style: none;
+    margin: 0px 16px;
+}
+.header-section {
+    position: relative;
+}
+.header-section  img {
+    width: 100%;
+    height: 650px;
+    display: block;
+    object-fit: cover;
+    /* opacity: 0.7; */
+}
+.header-section .overlay {
+    height: 650px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+#form p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: #04417e;
+    font-weight: 500;
+    text-align: center;
+}
+.header-section .overlay .overlay-text h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    max-width: 65%;
+    margin: 0 auto;
+}
+aside h2{
+    font-size: 2rem !important;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+section#aboutus {
+    padding: 30px 0;
+    background-color: #1B262C;
+    color: white;
+}
+#promise {
+    background-color: #1B262C;
+    color: white;
+    max-width: 60%;
+    width: fit-content;
+    margin: 40px auto;
+    /* border: 1px solid rgb(157, 157, 157); */
+    /* border-radius: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+
+}
+#promise p {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-weight: 300 !important;
+    color: rgba(255, 255, 255, 0.781);
+}
+#app {
+    max-width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+#app div h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#app div {
+    /* width: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#app img {
+    width: 100%;
+}
+section#aboutus h1, #benefits h1,#faq h1, #form h1, #promise h1, #slider h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+#aboutus p {
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+    font-weight: 200;
+    text-align: center;
+}
+#aboutus .card {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    background-color: white;
+    margin: 50px auto;
+    margin-bottom: -190px;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#aboutus .card table {
+    font-size: 1.5rem;
+}
+#aboutus .card table td, #aboutus .card table th {
+    padding: 20px 50px;
+    font-weight: 500;
+}
+#benefits {
+    margin-top: 200px;
+}
+
+#benefits div:nth-child(even) {
+    /* height: 400px; */
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+}
+#benefits div:nth-child(odd) {
+    /* min-height: 400px; */
+    width: 100%;
+    padding: 30px 0px;
+    background-color: rgb(227, 227, 227);
+}
+div.line {
+    height: 2px !important;
+    border-radius: 6px;
+    padding: 0 !important;
+    background-color: rgba(255, 255, 255, 0.521);
+    max-width: 30%;
+    margin: 20px auto;
+}
+#benefits img {
+    width: 100%;
+}
+.benifit-one, .benifit-two, .benifit-three {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+#benefits p {
+    font-size: 1.2rem;
+    /* text-align: center; */
+    color: rgb(70, 70, 70);
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+#icons {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+#icons img {
+    margin: 20px auto;
+    display: block;
+    height: 90px;
+}
+#icons div {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#icons p {
+    color: rgb(82, 82, 82);
+    text-align: center;
+    font-weight: 400;
+}
+
+#faq {
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+.accordion {
+    background-color: rgb(244, 244, 244);
+    background-color: #e2f4ff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.3rem
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #5ea1ce;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 20px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B262C;
+    color: white;
+    padding: 30px 0px;
+    font-weight: 200 !important;
+  }
+  footer h2 {
+    /* font-weight: bolder; */
+    margin-bottom: 25px;
+  }
+  footer p {
+    font-size: 1.1rem;
+    /* color: rgb(58, 58, 58); */
+    margin: 8px 0;
+    font-weight: 400;
+  }
+  footer a {
+    text-decoration: none;
+    /* color: rgb(58, 58, 58); */
+  }
+
+  #form {
+      background-color: #d7eaf7;
+      padding: 40px 0;
+  }
+form {
+    max-width: 25%;
+    margin: 0 auto;
+}
+ form input {
+     display: block;
+     margin: 20px 0;
+
+ }
+ form input[type='text'], form input[type='tel']{
+     outline: none;
+     padding: 6px;
+     font-size: 1.4rem;
+     background-color: rgba(255, 255, 255, 0.658);
+     border-bottom: 2px solid #90c7ec;
+    
+ }
+
+
+ form input {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+ }
+ form input[type='submit'] {
+     width: fit-content;
+     font-size: 1.4rem;
+     background-color: #5ea1ce;
+     color: white;
+     border: none;
+     outline: none;
+     padding: 8px 14px;
+     cursor: pointer;
+     transition: all .3s;
+     border-radius: 4px;
+
+ }
+ form input[type='submit']:hover {
+     background-color: #1B262C;
+ }
+
+
+ .slideshow-container {
+    /* max-width: 80%; */
+    /* min-height: 200px; */
+    /* position: relative; */
+    padding: 70px 0px;
+    margin: auto;
+    background-color: #001233;
+  }
+.slideshow-container div div.text {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column;
+    justify-content: center;
+}
+  .slideshow-container h1 {
+      font-style: italic;
+      font-size: 6rem !important;
+      color: white !important;
+  }
+  .slideshow-container p {
+      margin: 0 28px;
+      color: rgb(172, 172, 172);
+      font-size: 1.9rem;
+      font-weight: 300 !important;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+  }
+  
+  /* Caption text */
+  .text {
+    color: black;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    /* position: absolute; */
+    /* top: 0; */
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+@media (max-width: 700px){
+    .top-nav {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    
+    .top-nav img {
+        display: none;
+    }
+    .top-nav p {
+        margin: 0px ;
+    }
+    .top-nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .main-nav {
+        /* display: none; */
+        padding: 0 !important;
+        background-color: black;
+    }
+    .overlay-text h1 {
+        font-size: 2rem !important;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .header-section .overlay {
+        height: 300px;
+    }
+    .header-section img {
+        height: 300px;
+    }
+    #aboutus p {
+        max-width: 90%;
+        text-align: left;
+    }
+    #aboutus .card  {
+       display: none;
+    }
+    #benefits {
+        margin-top: 30px;
+    }
+    .benifit-one, .benifit-two, .benifit-three {
+        grid-template-columns: 80%;
+        grid-gap: 30px;
+    }
+    #icons {
+        grid-template-columns: 100%;
+        grid-gap: 30px;
+    }
+    #icons div {
+        padding: 8px;
+        
+
+    }
+    #icons p {
+        text-align: center;
+    }
+    #form form  {
+        max-width: 80%;
+    }
+    #faq {
+        max-width: 90%;
+    }
+    footer {
+        flex-direction: column;
+        padding: 20px 40px;
+        
+    }
+    footer div {
+        margin-bottom: 20px;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+    .accordion {
+        font-size: 1rem;
+    }
+    footer h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+    .main-nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        transition: all .3s;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 4px;
+        border: none;
+        background-color: transparent;
+    }
+    .main-nav a:hover {
+        background-color: rgba(0, 0, 0, 0.961);
+    }
+    .main-nav ul {
+        padding: 10px 0;
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .main-nav ul li {
+        list-style: none;
+        margin: 0px 3px;
+    }
+    #promise {
+        padding: 20px;
+        max-width: 90%;
+    }
+    #promise h1 {
+        font-size: 2rem;
+    }
+    .slideshow-container div div.text {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slideshow-container h1 {
+        font-size: 3rem !important;
+    }
+    section#aboutus h1, #benefits h1,#faq h1, #form h1, #promise h1, #slider h1{
+        font-size: 1.7rem;
+    }
+    .header-section .overlay .overlay-text h1 {
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 1.5rem !important;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.459);
+        padding: 8px;
+    }
+    #app {
+        grid-template-columns: 100%;
+    }
+    #benefits h2 {
+        font-size: 1.4rem !important;
+    }
+    #form p {
+        margin: 8px 0;
+    }
+    #form h2 {
+        font-size: 1.6rem;
+    }
+    #app {
+        max-width: 100%;
+    }
+   
+}
