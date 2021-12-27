@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="iconn.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="content here">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Build By Temlin</title>
@@ -57,8 +65,8 @@
                     </tr>
                     <tr>
                         <td>Material consumed</td>
-                        <td>10000m3</td>
-                        <td>7500m3</td>
+                        <td>10000m<div class="cubic">3</div></td>
+                        <td>7500m<div class="cubic">3</div></td>
                     </tr>
                     <tr>
                         <td>Machine usage</td>
@@ -83,14 +91,21 @@
             <aside><h2>Minimizing planning vs actual gap</h2><p>Tons of data come from the site. Work happens in uncontrolled environment leading in unexpected issues and deviation from what was planned.
                 We have developed industry first road specific planning module which helps planning engineers to take corrective actions immediately</p></aside>
         </div>
+
         <div class="benifit-two">
+            <img style="width: 80%; margin: 0 auto; border-radius: 6px" src="./resources/aerial-view.jpeg" alt="">
+            <aside><h2>Accurate chainage information to win L1</h2><p>We are the only company to provide site data - topography, obstructions etc. of every inch of the project to help you make the right estimates to win the tender.</p></aside>
+        </div>
+
+
+        <div class="benifit-three">
             
             <aside><h2>Minimizing material production vs application gap</h2><p>70% of the overrun happen because of material deviation. Be it diesel thefts, wastage in bitumen, over dumping of material etc.
                 We eliminate this problem by showing deviation in material real time by capturing site data accurately</p></aside>
             <img src="/resources/Rose gold laptop mockup copy.png" alt="">
             
         </div>
-        <div class="benifit-three">
+        <div class="benifit-four">
             <img src="/resources/Idol machine.png" alt="">
             <aside><h2>Minimizing machinery idle time</h2><p>Machines stand idle on chainages due to underusage. With multiple machinery deployed on the site, it is currently difficult to ensure high run rate for all.
                 We solve this issue by sending automatic insights to site office at a per machine level helping allocation of machinery in the most effective manner</p></aside>
@@ -106,6 +121,36 @@
 
     <div style="background-color: black;" class="line"></div>
 
+    <section class="text-slider">
+        <h1>Innovation to beat competition</h1>
+        <div style="background-color: black;" class="line"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-content">
+                    <h2>Innovation in onsite practices</h2>
+                    <p>With every company having access to similar resources - material and machine, we help you in bring in innovation in civil procedures to reduce the cost of critical tasks.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-content">
+                    <h2>Innovation in plant machinary</h2>
+                    <p>Machine A can deliver 700 meter of work in a day while machine B can achieve 300 meter at the same cost. We help you with innovative options within the industry to get more output in the same cost.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-content">
+                    <h2>Innovation with partners</h2>
+                    <p>We have an inhouse R&D team of road experts, planning engineers and consultants to help you provide turnkey solutions to help you stay ahead of the game.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
     <section id="icons">
         <div>
             <img src="/resources/Group 305.png" alt="">
@@ -113,7 +158,7 @@
         </div>
         <div>
             <img src="https://i2.wp.com/zeevector.com/wp-content/uploads/2021/01/NHAI-Logo-VECTOR.png?fit=757%2C532&ssl=1" alt="">
-            <p>Custom modules – RFI, Billing to make site working better</p>
+            <p>Custom modules to make site working seamless and quick</p>
         </div>
         <div>
             <img src="/resources/cost-reduction.png" alt="">
@@ -190,7 +235,7 @@
     <section id="promise">
         <h1>Our Brand Promise</h1>
         <div class="line"></div>
-        <p>At Temlin, our focus is only on reducing cost on your project. Today, economics of road construction has changes with shorter timelines and expensive raw material. We enable your entire site office and head office with just in time information to instantly take action on the data</p>
+        <p>At Temlin, our focus is only on reducing cost on your project. Today, economics of road construction has changed with shorter timelines and expensive raw material. We enable your entire site office and head office with just in time information to instantly take action on the data</p>
     </section>
 
     <section id="faq">
@@ -251,6 +296,8 @@
        </footer>
     
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
+
 </body>
 </html>
